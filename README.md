@@ -62,7 +62,6 @@ Once the system is set up, use the Blynk app to monitor the environmental condit
 # Usage
 
 - **Control Irrigation**: Adjust watering manually or set it to auto mode based on soil moisture levels.
-- **Monitor Temperature & Humidity**: View real-time data from the DHT11 sensor.
 - **Data Logging**: All readings are stored in the Realtime Database for easy access and tracking.
 
 ## License
