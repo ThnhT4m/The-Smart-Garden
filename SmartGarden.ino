@@ -1,11 +1,6 @@
-
-#include <LiquidCrystal_I2C.h>
 #define BLYNK_PRINT Serial
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
-
-//Initialize the LCD display
-LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 char auth[] = "xxxxxxx";//Enter your Auth token
 char ssid[] = "xxxxxx";//Enter your WIFI name
@@ -52,10 +47,6 @@ void soilMoistureSensor() {
   value = (value - 100) * -1;
 
   Blynk.virtualWrite(V0, value);
-  lcd.setCursor(0, 0);
-  lcd.print("Moisture :");
-  lcd.print(value);
-  lcd.print(" ");
 
 }
 
